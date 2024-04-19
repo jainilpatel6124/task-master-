@@ -39,7 +39,7 @@
       <div class="col" style="position: fixed; width: 100%">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a href="intro.html"><img src="image.png" alt="" height="30px" width="30px" /></a>
+            <a href="intro.html"><img src="image.png" alt="" height="40px" width="40px" data-toggle="tooltip" data-placement="bottom" title="Home" /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -103,31 +103,31 @@
       </div>
      
     </div>
-    <div style="display: flex; gap: 10px; justify-content: space-around;" class="row my-3">
-      <div class=" col-12 col-md-2">
+    <div style="display: flex; gap: 20px; justify-content:center" class="row my-3 ">
+      <div class=" col-12 col-md-2 mx-2" style="display: flex; align-items: center; ">
           <!-- Priority -->
-          <label for="prioritySelect" style="font-weight: 700; font-size: 20px;">Priority :</label>
-          <select id="prioritySelect" class="select">
+          <label for="prioritySelect" style="font-weight: 400; font-size: 20px;">Priority:</label>&nbsp;&nbsp;
+          <select id="prioritySelect" class="select my-1">
             <option value="All">All</option>
               <option value="High">High</option>
               <option value="Medium">Medium</option>
               <option value="Low">Low</option>
           </select>
       </div>
-      <div class=" col-12 col-md-2">
+      <div class=" col-12 col-md-2 mx-3 mx-md-5" style="display: flex; align-items: center;">
           <!-- Category -->
-          <label for="categorySelect" style="font-weight: 700; font-size: 20px;">Category :</label>
-          <select id="categorySelect" class="select">
+          <label for="categorySelect" style="font-weight: 400; font-size: 20px;">Category:</label>&nbsp;&nbsp;
+          <select id="categorySelect" class="select my-1">
             <option value="All">All</option>
               <option value="Work">Work</option>
               <option value="Study">Study</option>
               <option value="Personal">Personal</option>
           </select>
       </div>
-      <div class=" col-12 col-md-2">
+      <div class=" col-12 col-md-2 mx-2 mx-md-5" style="display: flex; align-items: center;">
           <!-- Status -->
-          <label for="statusSelect" style="font-weight: 700; font-size: 20px;">Status :</label>
-          <select id="statusSelect" class="select">
+          <label for="statusSelect" style="font-weight: 400; font-size: 20px;">Status:</label>&nbsp;&nbsp;&nbsp;
+          <select id="statusSelect" class="select my-1">
   
               <option value="All">All</option>
               <option value="Completed">Completed</option>
@@ -164,6 +164,7 @@
               <div class="mb-3">
                 <label for="categorySelect" class="form-label">Category</label>
                 <select class="form-select" id="categoryselect">
+                  <option value=""></option>
                   <option value="Personal">Personal</option>
                   <option value="Work">Work</option>
                   <option value="Study">Study</option>
@@ -173,6 +174,7 @@
               <div class="mb-3">
                 <label for="priorityselect" class="form-label">Priority</label>
                 <select class="form-select" id="priorityselect">
+                  <option value=""></option>
                   <option value="Low">Low</option>
                   <option value="Medium">Medium</option>
                   <option value="High">High</option>
@@ -196,32 +198,7 @@
           </div>
         </div>
       </form>
-      
-   
-    <!-- dropdown  -->
-   
-    <!-- <div>
-      
-      <label for="statusSelect" style="font-weight: 700; font-size: 20px;">Status :</label>
-      <select id="statusSelect" class="select">
-        <option value=""></option>
-          <option value="All">All</option>
-          <option value="Completed">Completed</option>
-          <option value="Incomplete">Incomplete</option>
-      </select>
-  </div> -->
-    
-    
-    
-      <!-- filter button-->
-      
-
-      
-      
-    
-    
-     
-
+ 
       <h5 class="text-center my-3">Tasks</h5>
 
       <div id="tasks" class="row gap-4 d-flex justify-content-center
@@ -240,7 +217,7 @@
     
         // Initialize options for html2pdf
         var opt = {
-            margin: 0.7,
+            margin: 0.4,
             filename: "todo_list.pdf",
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 2 },
