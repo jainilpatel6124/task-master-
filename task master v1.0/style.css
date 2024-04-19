@@ -294,6 +294,7 @@ select {
 
 body  {
     background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-repeat: no-repeat;
   background-size:cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
@@ -337,3 +338,8 @@ to {background-position: -100px 0px;background-size:2750px;}
   background: rgba(75, 75, 250, 0.3);
   border-radius: 3px;
 }
+
+@media (max-width: 400px) and (max-height:700px) {
+  .fixed{
+    margin-top: 50px;
+  }}
